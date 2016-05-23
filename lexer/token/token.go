@@ -6,6 +6,10 @@ package token
 * 2) 整数常量
 * 3) 标识符
 **/
+const EOF = &Token{
+	-1,
+}
+
 func NewIntegerToken(value int, lineNum int) IntegerToken {
 	return IntegerToken{
 		Token{
