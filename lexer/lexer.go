@@ -91,5 +91,5 @@ func (lexer *Lexer) processLine(lineNum uint32, line string) (bool, error) {
 		//获取到一个token
 	}
 
-	return nil
+	return true, nil
 }
